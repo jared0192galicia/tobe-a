@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <Header></Header>
       <ChatBot></ChatBot>
-      <section className="bg-white">
+      <section className="bg-white overflow-x-hidden">
         <h2 className="text-terracotta-pink text-3xl text-center pt-3">
           Publica, vende y envía
         </h2>

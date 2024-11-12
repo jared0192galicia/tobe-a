@@ -17,16 +17,16 @@ export default function Header() {
           className="flex items-center gap-2 cursor-pointer"
           onClick={() => router.push('/')}
         >
-          <span className="hidden sm:inline">La Empresa</span>
+          <span className="hidden sm:inline">Inicio</span>
           <MdHome className="text-3xl sm:text-xl" />
         </div>
         <h1 className="text-3xl md:text-5xl text-wine-red">Tobeña</h1>
         <div
           className="flex items-center gap-2 cursor-pointer"
-          onClick={() => router.push('/soporte')}
+          // onClick={() => router.push('/soporte')}
         >
-          <span className="hidden sm:inline">Soporte</span>
-          <MdContactSupport className="text-3xl sm:text-xl" />
+          {/* <span className="hidden sm:inline">Soporte</span>
+          <MdContactSupport className="text-3xl sm:text-xl" /> */}
         </div>
       </header>
 
