@@ -4,9 +4,14 @@ import ChatBot from '@/components/chatbot';
 import Footer from '@/components/footer';
 import Header from '@/components/header';
 import cn from '@/utilities/clsx';
+import { useEffect } from 'react';
 import { FaLocationDot } from 'react-icons/fa6';
 
 export default function Home() {
+  useEffect(() => {
+    document.title = 'Tobeña - Nosotros';
+  }, []);
+
   return (
     <>
     <Header></Header>

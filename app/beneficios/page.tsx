@@ -1,8 +1,14 @@
 "use client"
 import ChatBot from '@/components/chatbot';
 import Header from '@/components/header';
+import { useEffect } from 'react';
 
 export default function Benefits() {
+
+  useEffect(() => {
+    document.title = 'Tobeña - Beneficios';
+  }, []);
+
   return (
     <>
       <Header></Header>

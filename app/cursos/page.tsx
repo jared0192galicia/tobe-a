@@ -3,8 +3,14 @@
 import ChatBot from '@/components/chatbot';
 import Footer from '@/components/footer';
 import Header from '@/components/header';
+import { useEffect } from 'react';
 
 export default function Home() {
+  
+  useEffect(() => {
+    document.title = 'Tobeña - Capacitación';
+  }, []);
+
   return (
     <>
       <Header />

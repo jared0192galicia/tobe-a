@@ -1,5 +1,5 @@
 'use client';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { InputText } from 'primereact/inputtext';
 import { InputTextarea } from 'primereact/inputtextarea';
 import { FloatLabel } from 'primereact/floatlabel';
@@ -7,6 +7,11 @@ import { Button } from 'primereact/button';
 import Header from '@/components/header';
 
 export default function SupportForm() {
+  
+  useEffect(() => {
+    document.title = 'Tobeña - Soporte';
+  }, []);
+
   const handleSubmit = () => {
     // Aquí va la lógica de la llamada a la API REST para enviar el formulario.
     console.log('Formulario enviado a la API');
