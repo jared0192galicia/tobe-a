@@ -41,7 +41,7 @@ export default function Footer() {
         </div>
       </div>
       <p className="text-xs absolute bottom-3 left-3">
-        © 2024 Tobeña S.A. de C.V.
+        © 2024 Tobeña S.A.
       </p>
     </footer>
   );
