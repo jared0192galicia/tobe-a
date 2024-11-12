@@ -18,7 +18,7 @@ export default function Header() {
           onClick={() => router.push('/')}
         >
           <span className="hidden sm:inline">La Empresa</span>
-          <MdHome className="text-lg sm:text-xl" />
+          <MdHome className="text-3xl sm:text-xl" />
         </div>
         <h1 className="text-3xl md:text-5xl text-wine-red">Tobeña</h1>
         <div
@@ -26,7 +26,7 @@ export default function Header() {
           onClick={() => router.push('/soporte')}
         >
           <span className="hidden sm:inline">Soporte</span>
-          <MdContactSupport className="text-lg sm:text-xl" />
+          <MdContactSupport className="text-3xl sm:text-xl" />
         </div>
       </header>
 
@@ -57,6 +57,7 @@ export default function Header() {
           <a
             href="#opcion3"
             className="hover:text-terracotta-pink text-gray-600 font-light text-sm md:text-lg"
+            onClick={() => router.push('/nosotros')}
           >
             Sobre Nosotros
           </a>
@@ -64,6 +65,7 @@ export default function Header() {
           <a
             href="#opcion4"
             className="hover:text-terracotta-pink text-gray-600 font-light text-sm md:text-lg"
+            onClick={() => router.push('/beneficios')}
           >
             Beneficios
           </a>
