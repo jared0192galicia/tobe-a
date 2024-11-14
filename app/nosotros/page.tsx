@@ -14,10 +14,22 @@ export default function Home() {
 
   return (
     <>
-    <Header></Header>
-    <ChatBot></ChatBot>
+      <Header></Header>
+      <ChatBot></ChatBot>
       <section className="bg-white py-10">
-        <div className="w-[90%] mx-auto text-center">
+        <div className="w-[90%] mx-auto text-center relative">
+          <div className="absolute flex w-full -top-10 md:top-0 justify-between">
+            <img
+              src="/images/bird-l.png"
+              alt="decoracion"
+              className="w-10 md:w-24 z-10"
+            />
+            <img
+              src="/images/bird-r.png"
+              alt="decoracion"
+              className="w-10 md:w-24 z-10"
+            />
+          </div>
           <h2 className="text-terracotta-pink text-4xl font-bold mb-4">
             Sobre Nosotros
           </h2>
@@ -65,7 +77,19 @@ export default function Home() {
 
         <div className="w-[90%] mx-auto my-10 border-t border-solid border-gray-300"></div>
 
-        <section className="w-[90%] mx-auto text-center">
+        <section className="w-[90%] mx-auto text-center relative">
+          <div className="absolute flex w-full -top-10 md:top-0 justify-between">
+            <img
+              src="/images/flower-decoration.png"
+              alt="decoracion"
+              className="w-24 md:w-44 z-10"
+            />
+            <img
+              src="/images/flower-decoration.png"
+              alt="decoracion"
+              className="w-24 md:w-44 z-10"
+            />
+          </div>
           <h3 className="text-olive-dark text-3xl font-semibold mb-3">
             Nuestros Principales Valores
           </h3>

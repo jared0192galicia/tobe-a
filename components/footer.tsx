@@ -7,7 +7,7 @@ export default function Footer() {
   const router = useRouter();
 
   return (
-    <footer className="bg-wine-red text-white py-10 flex justify-evenly items-center relative">
+    <footer className="bg-purple-950 text-white py-12 flex justify-evenly items-center relative">
       <div className="flex flex-col items-center gap-1">
         <p className="text-lg pb-1">Síguenos</p>
         <div className="flex gap-2">
@@ -37,7 +37,16 @@ export default function Footer() {
           <IoIosSend className="cursor-pointer" />
         </div>
       </div>
-      <p className="text-xs absolute bottom-3 left-3">© 2024 Tobeña A.C.</p>
+      <p className="text-xs absolute bottom-3 left-3 md:left-24">© 2024 Tobeña A.C.</p>
+      <div className='absolute w-full bottom-2 h-auto flex justify-between items-center'>
+        <img src="/images/bird-l.png" alt="" className='w-0 md:w-20' />
+        <img src="/images/flower.png" alt="" className='w-0 md:w-32' />
+        <img src="/images/bird-r.png" alt="" className='w-0 md:w-20' />
+      </div>
+      <div className='absolute md:hidden w-full top-2 h-auto flex justify-between items-center'>
+        <img src="/images/flower-decoration.png" alt="" className='w-24' />
+        <img src="/images/flower-decoration.png" alt="" className='w-24' />
+      </div>
     </footer>
   );
 }

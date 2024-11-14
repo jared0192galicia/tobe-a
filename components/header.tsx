@@ -1,6 +1,6 @@
 import cn from '@/utilities/clsx';
 import { useRouter } from 'next/navigation';
-import { MdContactSupport, MdEmail, MdHome } from 'react-icons/md';
+import { MdHome } from 'react-icons/md';
 
 export default function Header() {
   const router = useRouter();
@@ -9,24 +9,49 @@ export default function Header() {
     <>
       <header
         className={cn(
-          'flex w-full justify-between items-center py-6 px-4 bg-white text-gray-700',
+          'relative w-full flex justify-between items-center py-6 px-4 bg-white text-gray-700',
           'md:justify-around md:py-10'
         )}
       >
-        <div
-          className="flex items-center gap-2 cursor-pointer"
-          onClick={() => router.push('/')}
-        >
-          <span className="hidden sm:inline">Inicio</span>
-          <MdHome className="text-3xl sm:text-xl" />
+        {/* Fondo de imágenes */}
+        <div className="absolute inset-0 flex justify-between items-center">
+          <div className="hidden md:block w-12 max-w-xs mx-auto">
+            <img
+              src="/images/left.png"
+              alt="Left decoration"
+              className="w-full h-auto object-cover"
+              />
+          </div>
+          <div className="w-20 max-w-2xl mx-auto flex justify-center items-center flex-col ">
+            <img
+              src="/images/center.png"
+              alt="Center decoration"
+              className="w-full h-auto object-cover"
+              />
+              <h1 className="text-3xl md:text-5xl text-wine-red text-center">Tobeña</h1>
+          </div>
+          <div className="hidden md:block w-12 max-w-xs mx-auto">
+            <img
+              src="/images/right.png"
+              alt="Right decoration"
+              className="w-full h-auto object-cover"
+            />
+          </div>
         </div>
-        <h1 className="text-3xl md:text-5xl text-wine-red">Tobeña</h1>
-        <div
-          className="flex items-center gap-2 cursor-pointer"
-          // onClick={() => router.push('/soporte')}
-        >
-          {/* <span className="hidden sm:inline">Soporte</span>
-          <MdContactSupport className="text-3xl sm:text-xl" /> */}
+
+        {/* Contenido del header */}
+        <div className="relative z-10 flex w-full justify-between items-center">
+          <div
+            className="flex items-center gap-2 cursor-pointer mb-14"
+            onClick={() => router.push('/')}
+          >
+            <span className="hidden sm:inline">Inicio</span>
+            <MdHome className="text-3xl sm:text-xl" />
+          </div>
+          {/* <h1 className="text-3xl md:text-5xl text-wine-red">Tobeña</h1> */}
+          <div className="flex items-center gap-2 cursor-pointer">
+            {/* Aquí puedes agregar más íconos o contenido */}
+          </div>
         </div>
       </header>
 
