@@ -47,7 +47,7 @@ export default function ChatBot() {
       {/* Chat flotante visible */}
       {visible && (
         <div
-          className="bg-ivory-light shadow-lg rounded-lg w-[350px] max-w-full border-2 border-wine-red h-[450px] flex flex-col"
+          className="bg-gradient-to-b from-desert-sand to-white shadow-lg rounded-lg w-[350px] max-w-full border-2 border-wine-red h-[450px] flex flex-col"
           style={{ transition: 'all 0.3s ease-in-out' }}
         >
           {/* Barra superior con el título y el botón de cerrar */}

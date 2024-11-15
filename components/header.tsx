@@ -22,13 +22,13 @@ export default function Header() {
               className="w-full h-auto object-cover"
               />
           </div>
-          <div className="w-20 max-w-2xl mx-auto flex justify-center items-center flex-col ">
+          <div className="w-20 max-w-2xl mx-auto flex justify-center items-center flex-col mb-5">
             <img
               src="/images/center.png"
               alt="Center decoration"
               className="w-full h-auto object-cover"
               />
-              <h1 className="text-3xl md:text-5xl text-wine-red text-center">Tobeña</h1>
+              <h1 className="text-4xl md:text-[60px] md:py-3 text-wine-red text-center font-playfair">Tobeña</h1>
           </div>
           <div className="hidden md:block w-12 max-w-xs mx-auto">
             <img

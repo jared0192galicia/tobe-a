@@ -8,6 +8,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        playfair: ['"Playfair Display"', 'serif'], // Agrega la fuente con un alias
+      },
       colors: {
         background: 'var(--background)',
         foreground: 'var(--foreground)',
